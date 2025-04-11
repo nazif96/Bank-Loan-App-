@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: bank-loan-app
+    env: docker
+    plan: free
+    region: frankfurt  # ou oregon, ohio...
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: PORT
+        value: 5000
