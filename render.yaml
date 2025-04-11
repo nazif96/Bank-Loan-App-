@@ -3,7 +3,6 @@ services:
     name: bank-loan-app
     env: docker
     plan: free
-    region: frankfurt  # ou oregon, ohio...
     dockerfilePath: ./Dockerfile
     buildCommand: ""
     startCommand: "python app.py"
