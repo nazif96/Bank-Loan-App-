@@ -1,5 +1,5 @@
 # Utilise une image de base Python
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # Crée et définit le répertoire de travail dans le conteneur
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Installe les dépendances si tu as un requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose le port par défaut de Flask
 EXPOSE 5000
