@@ -21,7 +21,22 @@ Cette application Flask permet de prédire l'éligibilité d'un client à un pr�
 ## 📁 Structure du projet
 
 ```
-Bank-Loan-App/ │ ├── app.py # Script principal Flask ├── model.pkl1 # Modèle ML sauvegardé ├── requirements.txt # Dépendances Python ├── Dockerfile # Image Docker pour build ├── docker-compose.yml # Lancement local avec Docker ├── render.yaml # Configuration Render.com ├── templates/ │ └── index.html # Interface web ├── static/ # (optionnel) fichiers CSS/JS └── README.md 
+## 📁 Structure du projet
+
+Bank-Loan-App/
+│
+├── static/css
+├── templates/
+│   └── index.html
+|
+├── Dockerfile
+├── LICENSE
+├── app.py
+├── docker-compose.yml
+├── requirements.txt
+├── model.pkl1
+├── render.yaml
+└── README.md
 
 ```
 
